@@ -1,0 +1,79 @@
+<form #empForm="ngForm" (ngSubmit)="addEmployee(empForm.value)">
+    <div class="ui-g">
+        <p-fieldset class="ui-g-7" legend="Employee Details" [style]="{'padding':'0px 5px', 'padding-left':'5px'}">
+            <div class="form-group, ui-g-3">
+                <label class="ui-g-4">Name</label>
+                <input type="text" [(ngModel)]="employee.name" name="name" #name="ngModel" class="form-control, ui-g-8" pInputText>
+            </div>
+            <div class="form-group, ui-g-3">
+                <label class="ui-g-4">EmpId</label>
+                <input type="text" [(ngModel)]="employee.empid" name="empid" #empid="ngModel" class="form-control, ui-g-8" pInputText>
+            </div>
+            <div class="form-group, ui-g-3">
+                <label class="ui-g-4">Role</label>
+                <input type="text" [(ngModel)]="employee.role" name="role" #role="ngModel" class="form-control, ui-g-8" pInputText>
+            </div>
+            <div class="form-group, ui-g-3">
+                <label class="ui-g-4">Phone</label>
+                <input type="text" [(ngModel)]="employee.phone" name="phone" #phone="ngModel" class="form-control, ui-g-8" pInputText>
+            </div>
+
+            <div class="form-group, ui-g-6">
+                <label class="ui-g-2">Email</label>
+                <input type="text" [(ngModel)]="employee.email" name="email" #email="ngModel" class="form-control, ui-g-10" pInputText>
+            </div>
+            <div class="form-group, ui-g-3">
+                <label class="ui-g-4">Extn</label>
+                <input type="text" [(ngModel)]="employee.extension" name="extension" #extension="ngModel" class="form-control, ui-g-8" pInputText>
+            </div>
+            <div class="form-group, ui-g-3">
+                <label class="ui-g-4">Desk</label>
+                <input type="text" [(ngModel)]="employee.cubicle" name="cubicle" #cubicle="ngModel" class="form-control, ui-g-8" pInputText>
+            </div>
+
+        </p-fieldset>
+
+        <p-fieldset class="ui-g-5" legend="Team Details" [style]="{'padding-top':'0px', 'padding-bottom':'0px'}">
+            <div ngModelGroup="team">
+                <div class="form-group, ui-g-6">
+                    <label class="ui-g-4">Team</label>
+                    <input type="text" [(ngModel)]="employee.team.name" name="name" #name="ngModel" class="form-control, ui-g-8" pInputText>
+                </div>
+                <div class="form-group, ui-g-6">
+                    <label class="ui-g-4">Process</label>
+                    <input type="text" [(ngModel)]="employee.team.process" name="process" #process="ngModel" class="form-control, ui-g-8" pInputText>
+                </div>
+                <div class="form-group, ui-g-6">
+                    <label class="ui-g-4">Coach</label>
+                    <input type="text" [(ngModel)]="employee.team.coach" name="coach" #coach="ngModel" class="form-control, ui-g-8" pInputText>
+                </div>
+                <div class="form-group, ui-g-6">
+                    <label class="ui-g-4">Manager</label>
+                    <input type="text" [(ngModel)]="employee.team.manager" name="manager" #manager="ngModel" class="form-control, ui-g-8" pInputText>
+                </div>
+            </div>
+        </p-fieldset>
+        <button pButton label="Add" type="submit" style="margin-bottom: 5px"></button>
+    </div>
+</form>
+
+<div class="ui-widget-header" style="padding:4px 10px;border-bottom: 0 none">
+    <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
+    <input #gb type="text" pInputText size="40" placeholder="Global Filter">
+</div>
+
+<p-dataTable #dt [value]="items | async" dataKey="id" [rows]="10" [paginator]="true" [pageLinks]="3" [rowsPerPageOptions]="[10,20,50]"
+    [globalFilter]="gb">
+    <p-column field="Name" header="Name" [style]="{'width':'150px'}"></p-column>
+    <p-column field="EmpId" header="Emp ID" [style]="{'width':'100px'}"></p-column>
+    <p-column field="Role" header="Role" [style]="{'width':'100px'}" [filter]="true" filterPlaceholder="Search"></p-column>
+    <p-column field="Phone" header="Phone" [style]="{'width':'120px'}"></p-column>
+    <p-column field="Email" header="Email" [style]="{'width':'200px'}"></p-column>
+    <p-column field="Extension" header="Extension" [style]="{'width':'100px'}"></p-column>
+    <p-column field="Cubicle" header="Desk" [style]="{'width':'100px'}"></p-column>
+
+    <p-column field="Team.Name" header="Team" [style]="{'width':'100px'}" [filter]="true" filterPlaceholder="Search"></p-column>
+    <p-column field="Team.Process" header="Process" [style]="{'width':'100px'}"></p-column>
+    <p-column field="Team.Coach" header="Coach" [filter]="true" filterPlaceholder="Search"></p-column>
+    <p-column field="Team.Manager" header="Manager" [filter]="true" filterPlaceholder="Search"></p-column>
+</p-dataTable>

@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~primeng/resources/themes/bootstrap/theme.css';
+
+body {
+    font-size: small;
+}
+
+.ui-column-title {
+    font-weight: bold;
+}
+
+.ui-datatable {
+    border: 1px solid;
+}
