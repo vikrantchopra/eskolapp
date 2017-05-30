@@ -91,7 +91,7 @@
     <p-column field="Team.Manager" header="Manager" [filter]="true" filterPlaceholder="Search"></p-column>
     <p-footer>
         <ul>
-            <li *ngFor="let record of selectedRecords" style="text-align: left">{{record.Email}}</li>
+            <li *ngFor="let record of selectedRecords" style="list-style:none; text-align:left">{{record.Email}}</li>
         </ul>
     </p-footer>
 </p-dataTable>

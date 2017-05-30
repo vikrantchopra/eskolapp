@@ -46,4 +46,24 @@ export class EmployeeService {
     //messages.remove({id: 101});
   }
 
+  update(emp: Employee) {
+    this.table.update({
+      id:emp.id,
+      Name: emp.name,
+      EmpId: emp.empid,
+      Role: emp.role,
+      Phone: emp.phone,
+      Email: emp.email,
+      Extension: emp.extension,
+      Cubicle: emp.cubicle,
+      Team: {
+        Name: emp.team.name,
+        Process: emp.team.process,
+        Coach: emp.team.coach,
+        Manager: emp.team.manager
+      },
+      datetime: new Date(),
+    });
+  }
+
 }

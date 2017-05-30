@@ -22,7 +22,7 @@
 </p-dataTable>
 
 <p-dialog header="Edit Delete Employees" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true">
-    <form #empForm="ngForm" (ngSubmit)="deleteEmployee(empForm.value)">
+    <form #empForm="ngForm" (ngSubmit)="editDelete(empForm.value)">
     <div class="ui-g">
         <p-fieldset class="ui-g-7" legend="Employee Details" [style]="{'padding':'0px 5px', 'padding-left':'5px'}">
             <div class="form-group, ui-g-3" style="display: none">
@@ -82,7 +82,11 @@
                 </div>
             </div>
         </p-fieldset>
-        <button pButton label="Delete" type="submit" style="margin-bottom: 5px"></button>
+         <div class="ui-g-12">
+          <p-radioButton name="groupname" value="save" [(ngModel)]="saveDelete" label="Save" class="ui-g-2"></p-radioButton>
+          <p-radioButton name="groupname" value="delete" [(ngModel)]="saveDelete" label="Delete" class="ui-g-2"></p-radioButton>
+        </div>
+        <button pButton label="Submit" type="submit" style="margin-bottom: 5px"></button>
     </div>
 </form>
 
