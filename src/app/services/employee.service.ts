@@ -17,10 +17,12 @@ export class EmployeeService {
       .order('datetime', 'descending')
       //.limit(20)
       .watch();
+      
   }
 
   save(emp: Employee) {
     this.table.store({
+      id:emp.id,
       Name: emp.name,
       EmpId: emp.empid,
       Role: emp.role,
@@ -36,6 +38,12 @@ export class EmployeeService {
       },
       datetime: new Date(),
     });
+  }
+
+  delete(emp: Employee) {console.log("EmpID: " + emp.empid);
+    //this.table.remove(emp);
+    this.table.remove(emp.id);
+    //messages.remove({id: 101});
   }
 
 }

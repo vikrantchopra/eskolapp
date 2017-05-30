@@ -1,5 +1,5 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
-import { EmployeeService }  from '../../services/employee.service';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { EmployeeService } from '../../services/employee.service';
 
 import { Employee } from '../../models';
 
@@ -11,30 +11,56 @@ import { Employee } from '../../models';
 })
 export class ShowEmployeeComponent implements OnInit {
 
-  @Input() 
+  //@Input() 
   items: any;
-  @Input()
+  //@Input()
   employee: Employee;
 
+  selectedRecords: any[];
+
+  //@Output()
+  //addRecord: EventEmitter<Employee> = new EventEmitter<Employee>();
+
   
-  //constructor(private service: EmployeeService) { }
-  constructor() {}
+
+  constructor(private service: EmployeeService) { }
 
   ngOnInit() {
-    //this.loadEmployees();
-    //this.employee = this.initializeEmployee();
+    console.log("Calling initialize inside show-employee");
+    this.load();
+    this.employee = this.initializeEmployee();
   }
 
-  loadEmployees() {
-    //this.items = this.service.getEmployees();
-    //console.log("Item size: " + this.items.size())
+  load() {
+    this.items = this.service.getEmployees();
   }
 
-  addEmployee(emp: Employee) {
-    //this.service.save(emp);
-    //this.employee = this.initializeEmployee();
+  addEmployee(model: Employee) {
+    //this.addRecord.emit(this.employee);
+    this.service.save(model);
+    this.employee = this.initializeEmployee();
   }
 
-  
+  initializeEmployee() {
+    let employee = {
+      id: '',
+      name: '',
+      empid: '1000000',
+      role: '',
+      phone: '98301 23456',
+      email: 'firstname.lastname@kofax.com',
+      extension: '4xyz',
+      cubicle: '7xy-ab',
+      team: {
+        name: '',
+        process: 'Kanban',
+        coach: '',
+        manager: ''
+      }
+    };
+
+    return employee;
+  }
+
 
 }

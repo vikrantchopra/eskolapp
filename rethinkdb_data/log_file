@@ -125,3 +125,120 @@
 2017-05-26T18:47:29.326535800 2.322095s info: Table 49bd8bb5-c85d-4e07-864f-be53c5d6e980: This server is Raft leader for term 5. Latest log index is 18.
 2017-05-26T18:47:29.452011100 2.447696s info: Table bd41b3b8-2a7f-4014-bcee-6d4ee7572417: This server is Raft leader for term 5. Latest log index is 17.
 2017-05-26T19:29:55.328174000 2548.335712s notice: Server got Control-C; shutting down...
+2017-05-26T19:52:06.005411300 0.027300s notice: Running rethinkdb 2.3.5-windows (MSC 190023506)...
+2017-05-26T19:52:06.005411301 0.027583s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2017-05-26T19:52:06.005411302 0.027624s notice: Loading data from directory D:\\MyWork\\DEV\\Angular\\eskolapp\\rethinkdb_data
+2017-05-26T19:52:06.050006500 0.083784s info: Cache size is set to 200 MB
+2017-05-26T19:52:06.050006501 0.083794s warn: Cache size does not leave much memory for server and query overhead (available memory: 1007 MB).
+2017-05-26T19:52:06.065627000 0.088091s notice: Listening for intracluster connections on port 60796
+2017-05-26T19:52:06.133498600 0.167591s notice: Listening for client driver connections on port 60797
+2017-05-26T19:52:06.133498601 0.167889s notice: Listening for administrative HTTP connections on port 60798
+2017-05-26T19:52:06.133498602 0.167986s notice: Listening on cluster address: 127.0.0.1
+2017-05-26T19:52:06.133498603 0.167988s notice: Listening on driver address: 127.0.0.1
+2017-05-26T19:52:06.133498604 0.167990s notice: Listening on http address: 127.0.0.1
+2017-05-26T19:52:06.133498605 0.167991s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-05-26T19:52:06.133498606 0.167993s notice: Server ready, "vchoprawin7b_gxp" 0ae35cd0-dd0a-46b9-a8b7-4749f6ada7ac
+2017-05-26T19:52:07.185404000 1.207469s info: Table 9e093331-2948-4509-92ed-b589d3a7b1bf: Starting a new Raft election for term 6.
+2017-05-26T19:52:07.296745500 1.331478s info: Table 9e093331-2948-4509-92ed-b589d3a7b1bf: This server is Raft leader for term 6. Latest log index is 28.
+2017-05-26T19:52:07.655669500 1.690226s info: Table bd41b3b8-2a7f-4014-bcee-6d4ee7572417: Starting a new Raft election for term 6.
+2017-05-26T19:52:07.671296200 1.693283s info: Table 9b3a6429-ee9c-4fda-bf44-d5534ff50dd9: Starting a new Raft election for term 6.
+2017-05-26T19:52:07.718180700 1.752974s info: Table bd41b3b8-2a7f-4014-bcee-6d4ee7572417: This server is Raft leader for term 6. Latest log index is 23.
+2017-05-26T19:52:07.796996800 1.819143s info: Table 49bd8bb5-c85d-4e07-864f-be53c5d6e980: Starting a new Raft election for term 6.
+2017-05-26T19:52:07.796996801 1.819416s info: Table 9b3a6429-ee9c-4fda-bf44-d5534ff50dd9: This server is Raft leader for term 6. Latest log index is 22.
+2017-05-26T19:52:07.843876900 1.874282s info: Table 49bd8bb5-c85d-4e07-864f-be53c5d6e980: This server is Raft leader for term 6. Latest log index is 23.
+2017-05-26T19:52:08.030068300 2.052131s info: Table ceea04ad-99e4-4234-b7ed-87ec36082285: Starting a new Raft election for term 6.
+2017-05-26T19:52:08.139424400 2.162371s info: Table ceea04ad-99e4-4234-b7ed-87ec36082285: This server is Raft leader for term 6. Latest log index is 29.
+2017-05-27T07:27:34.872900900 0.017356s notice: Running rethinkdb 2.3.5-windows (MSC 190023506)...
+2017-05-27T07:27:34.884431100 0.029189s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2017-05-27T07:27:34.884932500 0.029257s notice: Loading data from directory D:\\MyWork\\DEV\\Angular\\eskolapp\\rethinkdb_data
+2017-05-27T07:27:34.929553000 0.074308s info: Cache size is set to 200 MB
+2017-05-27T07:27:34.933564100 0.078007s notice: Listening for intracluster connections on port 50742
+2017-05-27T07:27:35.002244600 0.146547s notice: Listening for client driver connections on port 50743
+2017-05-27T07:27:35.002244601 0.146882s notice: Listening for administrative HTTP connections on port 50744
+2017-05-27T07:27:35.002244602 0.146910s notice: Listening on cluster address: 127.0.0.1
+2017-05-27T07:27:35.002244603 0.146912s notice: Listening on driver address: 127.0.0.1
+2017-05-27T07:27:35.002244604 0.146913s notice: Listening on http address: 127.0.0.1
+2017-05-27T07:27:35.002244605 0.146914s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-05-27T07:27:35.002244606 0.146916s notice: Server ready, "vchoprawin7b_gxp" 0ae35cd0-dd0a-46b9-a8b7-4749f6ada7ac
+2017-05-27T07:27:36.110693700 1.255135s info: Table bd41b3b8-2a7f-4014-bcee-6d4ee7572417: Starting a new Raft election for term 7.
+2017-05-27T07:27:36.189404400 1.333947s info: Table bd41b3b8-2a7f-4014-bcee-6d4ee7572417: This server is Raft leader for term 7. Latest log index is 27.
+2017-05-27T07:27:36.406982900 1.551447s info: Table ceea04ad-99e4-4234-b7ed-87ec36082285: Starting a new Raft election for term 7.
+2017-05-27T07:27:36.466641700 1.611393s info: Table ceea04ad-99e4-4234-b7ed-87ec36082285: This server is Raft leader for term 7. Latest log index is 34.
+2017-05-27T07:27:36.490203500 1.634647s info: Table 49bd8bb5-c85d-4e07-864f-be53c5d6e980: Starting a new Raft election for term 7.
+2017-05-27T07:27:36.577435600 1.722164s info: Table 49bd8bb5-c85d-4e07-864f-be53c5d6e980: This server is Raft leader for term 7. Latest log index is 27.
+2017-05-27T07:27:36.780979400 1.925392s info: Table 9b3a6429-ee9c-4fda-bf44-d5534ff50dd9: Starting a new Raft election for term 7.
+2017-05-27T07:27:36.931880500 2.076345s info: Table 9e093331-2948-4509-92ed-b589d3a7b1bf: Starting a new Raft election for term 7.
+2017-05-27T07:27:37.023123300 2.167863s info: Table 9b3a6429-ee9c-4fda-bf44-d5534ff50dd9: This server is Raft leader for term 7. Latest log index is 26.
+2017-05-27T07:27:37.023624200 2.168105s info: Table 9e093331-2948-4509-92ed-b589d3a7b1bf: This server is Raft leader for term 7. Latest log index is 34.
+2017-05-28T12:35:41.986524200 0.021713s notice: Running rethinkdb 2.3.5-windows (MSC 190023506)...
+2017-05-28T12:35:42.009085100 0.044418s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2017-05-28T12:35:42.009085101 0.044489s notice: Loading data from directory D:\\MyWork\\DEV\\Angular\\eskolapp\\rethinkdb_data
+2017-05-28T12:35:42.083282100 0.118541s info: Cache size is set to 200 MB
+2017-05-28T12:35:42.087292300 0.122750s notice: Listening for intracluster connections on port 64563
+2017-05-28T12:35:42.327932200 0.363520s notice: Listening for client driver connections on port 64564
+2017-05-28T12:35:42.328433900 0.363996s notice: Listening for administrative HTTP connections on port 64565
+2017-05-28T12:35:42.330441100 0.365695s notice: Listening on cluster address: 127.0.0.1
+2017-05-28T12:35:42.330441101 0.365700s notice: Listening on driver address: 127.0.0.1
+2017-05-28T12:35:42.330441102 0.365702s notice: Listening on http address: 127.0.0.1
+2017-05-28T12:35:42.330441103 0.365704s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-05-28T12:35:42.330441104 0.365706s notice: Server ready, "vchoprawin7b_gxp" 0ae35cd0-dd0a-46b9-a8b7-4749f6ada7ac
+2017-05-28T12:35:43.375719800 1.411042s info: Table ceea04ad-99e4-4234-b7ed-87ec36082285: Starting a new Raft election for term 8.
+2017-05-28T12:35:43.419337600 1.454866s info: Table ceea04ad-99e4-4234-b7ed-87ec36082285: This server is Raft leader for term 8. Latest log index is 39.
+2017-05-28T12:35:43.522110600 1.557674s info: Table 49bd8bb5-c85d-4e07-864f-be53c5d6e980: Starting a new Raft election for term 8.
+2017-05-28T12:35:43.533139500 1.568739s info: Table bd41b3b8-2a7f-4014-bcee-6d4ee7572417: Starting a new Raft election for term 8.
+2017-05-28T12:35:43.564723600 1.600018s info: Table 9e093331-2948-4509-92ed-b589d3a7b1bf: Starting a new Raft election for term 8.
+2017-05-28T12:35:43.585779200 1.620958s info: Table 49bd8bb5-c85d-4e07-864f-be53c5d6e980: This server is Raft leader for term 8. Latest log index is 31.
+2017-05-28T12:35:43.585779201 1.621022s info: Table bd41b3b8-2a7f-4014-bcee-6d4ee7572417: This server is Raft leader for term 8. Latest log index is 31.
+2017-05-28T12:35:43.636415200 1.671949s info: Table 9e093331-2948-4509-92ed-b589d3a7b1bf: This server is Raft leader for term 8. Latest log index is 40.
+2017-05-28T12:35:43.680030900 1.715496s info: Table 9b3a6429-ee9c-4fda-bf44-d5534ff50dd9: Starting a new Raft election for term 8.
+2017-05-28T12:35:43.751720700 1.787109s info: Table 9b3a6429-ee9c-4fda-bf44-d5534ff50dd9: This server is Raft leader for term 8. Latest log index is 30.
+2017-05-29T19:46:56.883132100 0.018988s notice: Running rethinkdb 2.3.5-windows (MSC 190023506)...
+2017-05-29T19:46:56.898758800 0.030784s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2017-05-29T19:46:56.898758801 0.030828s notice: Loading data from directory D:\\MyWork\\DEV\\Angular\\eskolapp\\rethinkdb_data
+2017-05-29T19:46:56.968801500 0.092760s info: Cache size is set to 200 MB
+2017-05-29T19:46:56.968801501 0.092768s warn: Cache size does not leave much memory for server and query overhead (available memory: 1173 MB).
+2017-05-29T19:46:56.973816600 0.096956s notice: Listening for intracluster connections on port 64641
+2017-05-29T19:46:57.339021100 0.471031s notice: Listening for client driver connections on port 64642
+2017-05-29T19:46:57.339021101 0.471345s notice: Listening for administrative HTTP connections on port 64643
+2017-05-29T19:46:57.339021102 0.471379s notice: Listening on cluster address: 127.0.0.1
+2017-05-29T19:46:57.339021103 0.471381s notice: Listening on driver address: 127.0.0.1
+2017-05-29T19:46:57.339021104 0.471383s notice: Listening on http address: 127.0.0.1
+2017-05-29T19:46:57.339021105 0.471385s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-05-29T19:46:57.339021106 0.471386s notice: Server ready, "vchoprawin7b_gxp" 0ae35cd0-dd0a-46b9-a8b7-4749f6ada7ac
+2017-05-29T19:46:58.393767000 1.519422s info: Table ceea04ad-99e4-4234-b7ed-87ec36082285: Starting a new Raft election for term 9.
+2017-05-29T19:46:58.477968900 1.601963s info: Table 9e093331-2948-4509-92ed-b589d3a7b1bf: Starting a new Raft election for term 9.
+2017-05-29T19:46:58.481977800 1.605142s info: Table ceea04ad-99e4-4234-b7ed-87ec36082285: This server is Raft leader for term 9. Latest log index is 45.
+2017-05-29T19:46:58.603752600 1.732302s info: Table 9e093331-2948-4509-92ed-b589d3a7b1bf: This server is Raft leader for term 9. Latest log index is 46.
+2017-05-29T19:46:58.707619000 1.842681s info: Table bd41b3b8-2a7f-4014-bcee-6d4ee7572417: Starting a new Raft election for term 9.
+2017-05-29T19:46:58.848258700 1.972391s info: Table bd41b3b8-2a7f-4014-bcee-6d4ee7572417: This server is Raft leader for term 9. Latest log index is 36.
+2017-05-29T19:46:58.895139700 2.018468s info: Table 9b3a6429-ee9c-4fda-bf44-d5534ff50dd9: Starting a new Raft election for term 9.
+2017-05-29T19:46:59.035779000 2.172501s info: Table 9b3a6429-ee9c-4fda-bf44-d5534ff50dd9: This server is Raft leader for term 9. Latest log index is 34.
+2017-05-29T19:46:59.192046700 2.315321s info: Table 49bd8bb5-c85d-4e07-864f-be53c5d6e980: Starting a new Raft election for term 9.
+2017-05-29T19:46:59.254553000 2.382972s info: Table 49bd8bb5-c85d-4e07-864f-be53c5d6e980: This server is Raft leader for term 9. Latest log index is 36.
+2017-05-29T22:12:37.651828200 8741.251930s notice: Server got Control-C; shutting down...
+2017-05-29T22:12:37.651828201 8741.252402s notice: Shutting down client connections...
+2017-05-29T22:12:38.105733300 8741.703977s notice: All client connections closed.
+2017-05-29T22:12:38.105733301 8741.703989s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-05-29T22:13:24.411984300 0.016969s notice: Running rethinkdb 2.3.5-windows (MSC 190023506)...
+2017-05-29T22:13:24.411984301 0.017180s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2017-05-29T22:13:24.411984302 0.017216s notice: Loading data from directory D:\\MyWork\\DEV\\Angular\\eskolapp\\rethinkdb_data
+2017-05-29T22:13:24.536189000 0.140967s info: Cache size is set to 200 MB
+2017-05-29T22:13:24.536189001 0.141005s warn: Cache size does not leave much memory for server and query overhead (available memory: 1157 MB).
+2017-05-29T22:13:24.542191600 0.147069s notice: Listening for intracluster connections on port 61399
+2017-05-29T22:13:24.650246900 0.265873s notice: Listening for client driver connections on port 61400
+2017-05-29T22:13:24.650246901 0.266155s notice: Listening for administrative HTTP connections on port 61401
+2017-05-29T22:13:24.650246902 0.266300s notice: Listening on cluster address: 127.0.0.1
+2017-05-29T22:13:24.650246903 0.266303s notice: Listening on driver address: 127.0.0.1
+2017-05-29T22:13:24.650246904 0.266305s notice: Listening on http address: 127.0.0.1
+2017-05-29T22:13:24.650246905 0.266306s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-05-29T22:13:24.650246906 0.266308s notice: Server ready, "vchoprawin7b_gxp" 0ae35cd0-dd0a-46b9-a8b7-4749f6ada7ac
+2017-05-29T22:13:25.655005100 1.259729s info: Table 9b3a6429-ee9c-4fda-bf44-d5534ff50dd9: Starting a new Raft election for term 10.
+2017-05-29T22:13:25.686259800 1.299909s info: Table 9b3a6429-ee9c-4fda-bf44-d5534ff50dd9: This server is Raft leader for term 10. Latest log index is 39.
+2017-05-29T22:13:26.049991900 1.654813s info: Table ceea04ad-99e4-4234-b7ed-87ec36082285: Starting a new Raft election for term 10.
+2017-05-29T22:13:26.132806600 1.737542s info: Table 9e093331-2948-4509-92ed-b589d3a7b1bf: Starting a new Raft election for term 10.
+2017-05-29T22:13:26.132806601 1.744549s info: Table ceea04ad-99e4-4234-b7ed-87ec36082285: This server is Raft leader for term 10. Latest log index is 50.
+2017-05-29T22:13:26.210971200 1.821290s info: Table 9e093331-2948-4509-92ed-b589d3a7b1bf: This server is Raft leader for term 10. Latest log index is 51.
+2017-05-29T22:13:26.335953100 1.942292s info: Table 49bd8bb5-c85d-4e07-864f-be53c5d6e980: Starting a new Raft election for term 10.
+2017-05-29T22:13:26.398461200 2.010195s info: Table 49bd8bb5-c85d-4e07-864f-be53c5d6e980: This server is Raft leader for term 10. Latest log index is 42.
+2017-05-29T22:13:26.429714100 2.043023s info: Table bd41b3b8-2a7f-4014-bcee-6d4ee7572417: Starting a new Raft election for term 10.
+2017-05-29T22:13:26.667744700 2.275028s info: Table bd41b3b8-2a7f-4014-bcee-6d4ee7572417: This server is Raft leader for term 10. Latest log index is 41.

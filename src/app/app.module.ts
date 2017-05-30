@@ -12,7 +12,7 @@ import { CrudEmployeeComponent } from './components/crud-employee/crud-employee.
 
 import { HorizonService } from './services/horizon.service';
 
-import {TabViewModule, FieldsetModule, InputTextModule, ButtonModule, DataTableModule} from 'primeng/primeng';
+import {TabViewModule, FieldsetModule, InputTextModule, ButtonModule, DataTableModule, DialogModule} from 'primeng/primeng';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,8 @@ import {TabViewModule, FieldsetModule, InputTextModule, ButtonModule, DataTableM
     FieldsetModule,
     InputTextModule,
     ButtonModule,
-    DataTableModule
+    DataTableModule,
+    DialogModule
   ],
   providers: [HorizonService],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 
 export interface Employee {
+    id: string,
     name: string,
     empid: string,
     role: string,

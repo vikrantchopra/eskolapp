@@ -1,3 +1,13 @@
-<div class="container">
+<!--div class="container">
   <app-employee></app-employee>
-</div>
+</div-->
+
+<p-tabView>
+    <p-tabPanel header="Show/Add" [headerStyle]="{'border': '1px solid', 'border-bottom-style': 'none', 'margin-left': '55px'}">
+       <app-show-employee></app-show-employee>
+    </p-tabPanel>
+
+    <p-tabPanel header="CRUD Employee" [headerStyle]="{'border': '1px solid', 'border-bottom-style': 'none'}">
+       <app-crud-employee></app-crud-employee>
+    </p-tabPanel>
+</p-tabView>

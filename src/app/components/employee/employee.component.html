@@ -1,9 +1,9 @@
-<p-tabView>
+<!--p-tabView>
     <p-tabPanel header="Show/Add" [headerStyle]="{'border': '1px solid', 'border-bottom-style': 'none', 'margin-left': '55px'}">
-       <app-show-employee [items]='empItems' [employee]='employeeObj'></app-show-employee>
+       <app-show-employee [items]='empItems' [employee]='employeeObj' (addRecord)="addEmployee($event)"></app-show-employee>
     </p-tabPanel>
+
     <p-tabPanel header="CRUD Employee" [headerStyle]="{'border': '1px solid', 'border-bottom-style': 'none'}">
-        <app-crud-employee></app-crud-employee>
+        <app-crud-employee [items]='editItems' [employee]='employeeObj' (deleteRecord)="deleteEmployee($event)"></app-crud-employee>
     </p-tabPanel>
-    
-</p-tabView>
+</p-tabView-->
