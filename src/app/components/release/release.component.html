@@ -1,0 +1,51 @@
+<form #releaseForm="ngForm" (ngSubmit)="addRelease(releaseForm.value)">
+
+    <div class="ui-g">
+        <p-fieldset class="ui-g-8" legend="Release Details" [style]="{'padding':'0px 5px', 'padding-left':'5px'}">
+
+            <div class="form-group, ui-g-4">
+                <label class="ui-g-12">ID</label>
+                <input type="text" [(ngModel)]="release.id" name="id" #id="ngModel" class="form-control, ui-g-12" pInputText>
+            </div>
+            <div class="form-group, ui-g-4">
+                <label class="ui-g-12">Team</label>
+                <input type="text" [(ngModel)]="release.team" name="team" #team="ngModel" class="form-control, ui-g-12" pInputText>
+            </div>
+            <div class="form-group, ui-g-4">
+                <label class="ui-g-12">Product</label>
+                <input type="text" [(ngModel)]="release.product" name="product" #product="ngModel" class="form-control, ui-g-12" pInputText>
+            </div>
+            <div class="form-group, ui-g-4">
+                <label class="ui-g-12">Release</label>
+                <input type="text" [(ngModel)]="release.release" name="release" #release="ngModel" class="form-control, ui-g-12" pInputText>
+            </div>
+            <div class="form-group, ui-g-4">
+                <label class="ui-g-12">Release Date</label>
+                <p-calendar [(ngModel)]="release.releaseDate" class="form-control, ui-g-12" name="releaseDate" #releaseDate="ngModel"></p-calendar>
+            </div>
+            <div class="form-group, ui-g-4">
+                <label class="ui-g-12">Release Link</label>
+                <input type="text" [(ngModel)]="release.releaseLink" name="releaseLink" #releaseLink="ngModel" class="form-control, ui-g-12"
+                    pInputText>
+            </div>
+
+        </p-fieldset>
+        <div class="ui-g-4"></div>
+
+        <button pButton label="Add" type="submit" style="margin-bottom: 5px; margin-left: 5px"></button>
+    </div>
+</form>
+
+<div style="margin-top: 50px">
+    <p-dataTable [value]="items | async" dataKey="id" [rows]="10" [paginator]="true" [pageLinks]="3" [rowsPerPageOptions]="[10,20,50]"
+        [(selection)]="selectedRecord" selectionMode="single" (onRowSelect)="onRowSelect($event)">
+
+        <p-column field="id" header="ID" [style]="{'width':'50px'}"></p-column>
+        <p-column field="team" header="Team" [style]="{'width':'150px'}"></p-column>
+        <p-column field="product" header="Product" [style]="{'width':'100px'}"></p-column>
+        <p-column field="release" header="Release" [style]="{'width':'100px'}" [filter]="true" filterPlaceholder="Search"></p-column>
+        <p-column field="releaseDate" header="Release Date" [style]="{'width':'120px'}">{{releaseDate | date: 'medium'}}</p-column>
+        <p-column field="releaseLink" header="Release Link" [style]="{'width':'200px'}"></p-column>
+
+    </p-dataTable>
+</div>
